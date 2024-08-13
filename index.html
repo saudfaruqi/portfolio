@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="logo.png" sizes="32x32" />
+
+    <link rel="stylesheet" href="home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <meta
+      name="description"
+      content="WebCrafts: Where digital artistry meets precision coding. Explore a portfolio showcasing expertise in HTML, CSS, JavaScript, Node.js, MySQL, SEO, Canva, and UI/UX design. Let's collaborate to create outstanding digital experiences."
+    />
+  </head>
+  <body>
+    <header class="section0" id="section0">
+      <div class="section1">
+        <div class="logo">
+          <a href="index.html"><img src="logo.png" alt="WebCrafts Logo" /></a>
+        </div>
+
+        <nav class="links">
+          <ul>
+            <li><a class="smooth-scroll" href="#section4">About</a></li>
+            <li><a class="smooth-scroll" href="#section5">Projects</a></li>
+            <li><a class="smooth-scroll" href="#resume">Resume</a></li>
+            <li><a class="smooth-scroll" href="#section9">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+          <i class="fa-sharp fa-solid fa-bars-staggered fa-flip-horizontal"></i>
+        </div>
+      </div>
+
+      <div class="section2 section">
+        <div class="text">
+          <h1>Empowering Digital Solutions with Innovation</h1>
+          <h4>Crafting State-of-the-Art Websites and Web Applications</h4>
+          <p>
+            Welcome to my digital playground! As a passionate web developer, I specialize in creating cutting-edge websites and web applications. Let’s collaborate to build something extraordinary! 🚀
+          </p>
+          <p>
+            Turning ideas into reality • Elevating digital experiences • Crafting the web of tomorrow
+          </p>
+
+          <button id="contactButton">Contact</button>
+
+          <div class="modal-container" id="modalContainer">
+            <div class="modal">
+              <span class="close-button" id="closeButton">&times;</span>
+              <h3>Get in Touch</h3>
+              <form id="contactForm" action="submit_email.php" method="POST">
+                <input type="email" name="email" id="userEmailInput" placeholder="Your Email Address" required />
+                <button type="submit" id="submitButton">Submit</button>
+              </form>
+            </div>
+          </div>
+
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/saudfaruqi" aria-label="GitHub Profile"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/saudfaruqi/" aria-label="LinkedIn Profile"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.infinitilogics.contact-form" aria-label="Infiniti Logics"
+                ><i class="fa-solid fa-globe"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="image">
+          <img src="mypic.png" alt="Saud Faruqi" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section3">
+      <div class="stats-card">
+        <h2><span id="websitesMade">15</span>+</h2>
+        <p>Websites Developed</p>
+      </div>
+      <div class="stats-card">
+        <h2><span id="yearsExperience">3</span>+</h2>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stats-card">
+        <h2><span id="clientsWorkedWith">10</span>+</h2>
+        <p>Clients Served</p>
+      </div>
+      <div class="stats-card">
+        <h2><span id="countriesWorkingIn">5</span>+</h2>
+        <p>Countries Operated In</p>
+      </div>
+    </section>
+
+    <section class="section4" id="section4">
+      <h2>Why Choose Me?</h2>
+      <div class="content">
+        <article class="text text-large one">
+          <h2>Expertise</h2>
+          <p>
+            With years of experience and a proven track record, I deliver high-quality results. My expertise ensures that your project is handled with precision and professionalism.
+          </p>
+        </article>
+        <article class="text text-small two">
+          <h2>Creative Solutions</h2>
+          <p>
+            I thrive on thinking outside the box, creating innovative and unique solutions tailored to your specific needs, setting your project apart from the competition.
+          </p>
+        </article>
+        <article class="text text-large three">
+          <h2>Client-Centric Approach</h2>
+          <p>
+            Your satisfaction is my top priority. I believe in open communication and collaboration, working closely with you throughout the project to bring your vision to life.
+          </p>
+        </article>
+        <article class="text text-small four">
+          <h2>Timely Delivery</h2>
+          <p>
+            I respect your time and guarantee that your project will be completed within the agreed timeline, without compromising on quality.
+          </p>
+        </article>
+        <article class="text text-large five">
+          <h2>Attention to Detail</h2>
+          <p>
+            Every aspect of your project is meticulously examined, ensuring a polished and flawless end result.
+          </p>
+        </article>
+        <article class="text text-medium six">
+          <h2>Ongoing Support</h2>
+          <p>
+            I provide continuous support, even after project completion, to address any questions or concerns you may have.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section5" id="section5">
+      <h2>My Work</h2>
+      <div class="projects">
+        <article class="project">
+          <img src="travel.svg" alt="Bizzecomme Project" />
+          <h2>Bizzecomme</h2>
+          <p>
+            Managed and optimized Shopify, Flipkart, Amazon, and other e-commerce accounts.
+          </p>
+          <p><strong>Duration:</strong> March 2022 - June 2022</p>
+          <a href="https://bizzecomme.netlify.app/" target="_blank">View Project</a>
+        </article>
+
+        <article class="project">
+          <img src="flower.svg" alt="Flower Booking Project" />
+          <h2>Flower Booking</h2>
+          <p>
+            Developed an online platform for booking floral arrangements.
+          </p>
+          <p><strong>Duration:</strong> September 2022 - December 2022</p>
+          <a href="https://saud-flower.netlify.app/" target="_blank">View Project</a>
+        </article>
+
+        <article class="project">
+          <img src="estate.svg" alt="Enfixr Project" />
+          <h2>Enfixr</h2>
+          <p>
+            Created a home service website offering plumbing, electrical, and mechanical services.
+          </p>
+          <p><strong>Duration:</strong> January 2023 - April 2023</p>
+          <a href="https://enfixr.netlify.app/" target="_blank">View Project</a>
+        </article>
+
+        <article class="project">
+          <img src="learn.svg" alt="Online Learning Project" />
+          <h2>Online Learning</h2>
+          <p>
+            Launched an e-learning platform providing a variety of courses and educational resources.
+          </p>
+          <p><strong>Duration:</strong> May 2023 - August 2023</p>
+          <a href="https://saud-learn.netlify.app/" target="_blank">View Project</a>
+        </article>
+
+        <article class="project">
+          <img src="admin.svg" alt="Arclight Digitals Project" />
+          <h2>Arclight Digitals</h2>
+          <p>
+            Contributed to cutting-edge web development projects for Arclight Digitals.
+          </p>
+          <p><strong>Duration:</strong> September 2023 - October 2023</p>
+          <a href="https://arclightdigitals.netlify.app/" target="_blank">View Project</a>
+        </article>
+
+        <article class="project">
+          <img src="shopping.svg" alt="Design Auras Project" />
+          <h2>Design Auras</h2>
+          <p>
+            Delivered a comprehensive e-commerce solution for Design Auras.
+          </p>
+          <p><strong>Duration:</strong> November 2023 - Present</p>
+          <a href="https://designauras.netlify.app/" target="_blank">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="section6 section" id="section6">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <span>HTML</span>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS</span>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill">
+          <i class="fab fa-react"></i>
+          <span>React.js</span>
+        </div>
+        <div class="skill">
+          <i class="fab fa-node-js"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="skill">
+          <i class="fas fa-database"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="skill">
+          <i class="fab fa-java"></i>
+          <span>Java</span>
+        </div>
+        <div class="skill">
+          <i class="fab fa-cuttlefish"></i>
+          <span>C lang</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-php"></i>
+          <span>PHP</span>
+        </div>
+        <div class="skill">
+          <i class="fa-brands fa-python"></i>
+          <span>Pyhton</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-container section" id="resume">
+      <h1>Unlock My Professional Journey</h1>
+      <p>
+        Explore my qualifications, achievements, and experience by downloading
+        my comprehensive resume:
+      </p>
+      <div class="image">
+        <img src="Resume.png" alt="Page 1 of my CV" />
+      </div>
+      <a href="Resume.pdf" download>
+        <button class="download-button">Download Resume</button>
+      </a>
+    </div>
+
+    <div class="section7 section">
+      <h2>Professional Journey</h2>
+      <div class="vertical-line"></div>
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2021: Foundations of Web Development</h3>
+          <p>
+            Began university studies in Computer Science, immersing in foundational web technologies such as HTML, CSS, and JavaScript. Developed initial projects including a result calculation tool and a travel website. Created a school management system using C and explored basic PHP scripting for web development.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>2022: Advancing Technical Skills</h3>
+          <p>
+            Expanded expertise to include Node.js, PHP, and advanced web development techniques. Successfully completed projects such as an admin dashboard, an e-commerce platform, and a floral shop website. Designed a demo ATM machine application in Java and initiated learning Python, focusing on its applications in data analysis and machine learning.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2023: Professional Growth and Innovation</h3>
+          <p>
+            Launched freelance work on Upwork, where I further refined my skills in React.js and MySQL. Delivered notable projects, including a real estate website, Arclight Digitals, Designauras, and the official site for Infiniti Logics. Leveraged Python for machine learning applications and advanced my knowledge in PHP for server-side scripting. Ventured into entrepreneurship, marking the launch of my own startup, Infiniti Logics.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>2024: Expanding Horizons</h3>
+          <p>
+            Continued growth in web development and machine learning, integrating new technologies and methodologies. Worked on innovative projects involving complex backend systems and interactive web applications. Focused on expanding the reach of Infiniti Logics, exploring new markets and technologies to drive the company’s global presence.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section8 section" id="section8">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <div class="question-container">
+      <div class="question">
+        <strong>Q1: What services do you offer as a web developer?</strong>
+      </div>
+      <div class="answer">
+        <p>
+          As a web developer, I offer a comprehensive range of services, including website design and development, web application creation, front-end and back-end development, as well as ongoing website maintenance and support.
+        </p>
+      </div>
+    </div>
+    <div class="question-container">
+      <div class="question">
+        <strong>Q2: How can I request your services?</strong>
+      </div>
+      <div class="answer">
+        <p>
+          To request my services, please contact me via the contact form on my website or by emailing me directly. We will discuss your project requirements, and I will provide you with a detailed quote and project timeline.
+        </p>
+      </div>
+    </div>
+    <div class="question-container">
+      <div class="question">
+        <strong>Q3: What technologies and frameworks do you specialize in?</strong>
+      </div>
+      <div class="answer">
+        <p>
+          I specialize in a variety of technologies and frameworks including HTML, CSS, JavaScript, React.js, Node.js, MySQL, Java, and C. I am committed to staying current with the latest industry trends and tools to deliver optimal solutions for my clients.
+        </p>
+      </div>
+    </div>
+    <div class="question-container">
+      <div class="question">
+        <strong>Q4: Do you offer ongoing support after project completion?</strong>
+      </div>
+      <div class="answer">
+        <p>
+          Yes, I provide ongoing support after project completion. This includes assistance with bug fixes, updates, and any additional support needed to ensure your website operates smoothly and effectively.
+        </p>
+      </div>
+    </div>
+    <div class="question-container">
+      <div class="question">
+        <strong>Q5: Can you assist with website optimization for better performance?</strong>
+      </div>
+      <div class="answer">
+        <p>
+          Certainly! I can optimize your website for improved performance by reducing file sizes, implementing caching strategies, optimizing images, and applying best practices to enhance loading times and overall user experience.
+        </p>
+      </div>
+    </div>
+    <div class="question-container">
+      <div class="question">
+        <strong>Q6: Can you work with a team or independently as a freelancer?</strong>
+      </div>
+      <div class="answer">
+        <p>
+          I have experience working both as part of a development team and as an independent freelancer. Whether collaborating with a team or handling a project solo, my focus is on delivering high-quality results that meet your requirements.
+        </p>
+      </div>
+    </div>
+    <div class="question-container">
+      <div class="question">
+        <strong>Q7: Can you provide examples of your previous work?</strong>
+      </div>
+      <div class="answer">
+        <p>
+          Yes, you can view examples of my previous work in the portfolio section of my website. I am also happy to provide specific case studies and client references upon request.
+        </p>
+      </div>
+    </div>
+    <div class="question-container">
+      <div class="question">
+        <strong>Q8: How do you manage project timelines and deadlines?</strong>
+      </div>
+      <div class="answer">
+        <p>
+          Adhering to deadlines is a key aspect of my work process. I develop detailed project timelines with clear milestones and maintain regular communication with clients to keep them updated on progress. If any issues arise, I will discuss them promptly and work to find the best solution to keep the project on track.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="section9 section" id="section9">
+      <div class="contact-info">
+        <img src="chat.svg" alt="Profile Picture" />
+      </div>
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contactForm" action="submit_contact.php" method="POST" onsubmit="return validateForm();">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+    
+          <button type="submit" class="submit-button" name="submit">
+            Submit
+          </button>
+        </form>
+        <div id="thankYouMessage" style="display: none;">
+          Thank you for contacting me. I will get back to you within 24-48 hours.
+        </div>
+      </div>
+    </div>
+    
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Contact Information</h3>
+          <p>
+            <strong>Email:</strong> <a href="mailto:saudafaruqi@gmail.com">saudafaruqi@gmail.com</a>
+          </p>
+          <p>
+            <strong>Phone:</strong> <a href="tel:03408355962">+92 340-8335962</a>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a class="smooth-scroll" href="#section0">Home</a></li>
+            <li><a class="smooth-scroll" href="#resume">Resume</a></li>
+            <li><a class="smooth-scroll" href="#section6">Skills</a></li>
+            <li><a class="smooth-scroll" href="#section9">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            Welcome to our website! We are a dedicated team committed to providing exceptional services and products. Our mission is to exceed expectations and deliver value to our esteemed clients.
+          </p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="home.js"></script>
+  </body>
+</html>
